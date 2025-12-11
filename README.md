@@ -1,17 +1,9 @@
-# testapp
+В приложении три основных экрана: онбординг (SplashScreen), экран оплаты (PaywallScreen) и главный экран (HomeScreen).
 
-A new Flutter project.
+При запуске приложение сначала открывает SplashScreen. Здесь показывается приветствие, и сразу же выполняется проверка - есть ли у пользователя активная подписка. Если в локальном хранилище есть запись о активной подписке, то пользователь автоматически перенаправляется на главный экран. Если подписки нет, появляется обычная кнопка "Продолжить", которая ведёт на экран оплаты.
 
-## Getting Started
+На PaywallScreen реализован простой дизайн. Два тарифа — месячный и годовой, у годового отображается скидка. Выбор подписок сделан через анимированные карточки. Кнопка "Продолжить" сохраняет флаг подписки хранилише и отправляет пользователя на главный экран.
 
-This project is a starting point for a Flutter application.
+Главный экран показывает базовый контент — приветственный текст и сообщеиние об активной подписке.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Если бы было больше времени то сделал бы дизайн страниц более наполненным, можно было бы добавить каких-нибудь анимаций. Сделал бы адаптив под декстопные приложения и веб. Возможно бы добавил хранение более развернутой информации о подписке, например чтобы выводить ее на главной странице, например дату оформления, дату окончания. Разбил бы код на компоненты. Например приветственные сообщения или блоки сообщений, кнопки.
